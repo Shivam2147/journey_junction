@@ -1,0 +1,379 @@
+<?php
+include('admin/config/connection.php');
+$sql = "SELECT * FROM home WHERE Sno=1";
+$check = mysqli_query($connection, $sql);
+$value = mysqli_fetch_assoc($check);
+?>
+
+<html>
+
+<head>
+  <title>JOURNEY JUNCTION</title>
+  <link href="stylecss/style_raj.css" rel="stylesheet" />
+</head>
+
+<body>
+  <div class="container">
+
+  <header>
+        <nav role="navigation">
+            <div id="menuToggle">
+                <input type="checkbox" />
+                <span></span>
+                <span></span>
+                <span></span>
+                <ul id="menu">
+                  <a href="rajasthan.html">
+                        <li>Home</li>
+                    </a>
+                    <a href="#destination">
+                        <li>Destination</li>
+                    </a>
+                    <a href="#adventure">
+                        <li>Adventures</li>
+                    </a>
+                    <a href="#hotel">
+                        <li>Hotel</li>
+                    </a>
+                    <a href="#food">
+                        <li>Food</li>
+                    </a>
+                    </a>
+                    <a href="#contact">
+                        <li>Contact</li>
+                    </a>
+                </ul>
+            </div>
+            <a href="images/logo.jpeg"><img class="logo" src="images/logo.jpeg" alt="logo" /></a>
+            <div class="title">
+                <span class="title1">J</span>
+
+                <span class="title2">o</span>
+
+                <span class="title1">u</span>
+
+                <span class="title2">r</span>
+
+                <span class="title1">n</span>
+
+                <span class="title2">e</span>
+
+                <span class="title1">y</span>
+
+                <span class="title2">J</span>
+
+                <span class="title1">u</span>
+
+                <span class="title2">n</span>
+
+                <span class="title1">c</span>
+
+                <span class="title2">t</span>
+
+                <span class="title1">i</span>
+
+                <span class="title2">o</span>
+
+                <span class="title1">n</span>
+
+
+            </div>
+        </nav>
+        <!-- <button class="button" onclick="darkmode()"> Button </button> -->
+    </header>
+
+    <div id="home" style="background:
+                          linear-gradient(rgba(70, 20, 40, 0.5), 
+                          rgba(50, 50, 40, 0.5)), url('images/001.jpg');
+  background-size: 100% 100%;">
+      <div style="color:#F4EEFF; font-size:30px; height:50px">Welcome to</div>
+      <h1 class="city">UDAIPUR</h1><br />
+      <h2 style="color: #EEEEEE; font-size:50px; height:70px">The City of Lakes<h2>
+    </div>
+
+    <div class="slider" id="destination">
+      <h1>Destinations</h1>
+      <img src="images/aaa.jpg">
+      <img src="images/bbb.jpg">
+      <img src="images/ccc.jpg">
+      <img src="images/ddd.jpeg">
+      <img src="images/eee.jpeg">
+      <img src="images/fff.jpeg">
+    </div>
+
+    <div id="adventure">
+      <h1>Adventures</h1>
+      <div class="adv-container">
+        <div class="adv-carousel">
+          <figure> <img src="images/111.jpg"> </figure>
+          <figure> <img src="images/222.jpg"> </figure>
+          <figure> <img src="images/333.jpg"> </figure>
+          <figure> <img src="images/444.jpg"> </figure>
+          <figure> <img src="images/555.jpg"> </figure>
+          <figure> <img src="images/666.jpg"> </figure>
+          <figure> <img src="images/777.jpg"> </figure>
+          <figure> <img src="images/888.jpg"> </figure>
+          <figure> <img src="images/999.jpg"> </figure>
+        </div>
+      </div>
+    </div>
+
+
+    <div id="hotel">
+    <h1>Hotel</h1>
+    <div class="card">
+        <div class="card-inner">
+            <div class="card-front" style="background-image: url('images/h001.jpg');">
+            </div>
+            <div class="card-back">
+                <h2>Hilltop Palace</h2>
+                <h6>Price:&nbsp;&nbsp; 2500&#8377; (1 Night)</h6>
+                <h6>Rating: &nbsp;&nbsp; 4.5 (463 User)</h6>
+                <a target="_blank" href="https://www.booking.com/hotel/in/hilltop-palace.en-gb.html">
+                    <div class="button">Book Now</div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-inner">
+            <div class="card-front" style="background-image: url('images/r001.jpg');">
+            </div>
+            <div class="card-back">
+                <h2>Rampratap Palace</h2>
+                <h6>Price:&nbsp;&nbsp; 2500&#8377; (1 Night)</h6>
+                <h6>Rating: &nbsp;&nbsp; 4.5 (463 User)</h6>
+                <a target="_blank" href="https://www.booking.com/hotel/in/rampratap-palace.en-gb.html">
+                    <div class="button">Book Now</div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-inner">
+            <div class="card-front" style="background-image: url('images/a001.jpg');">
+            </div>
+            <div class="card-back">
+                <h2>Hotel Boutique</h2>
+                <h6>Price:&nbsp;&nbsp; 2500&#8377; (1 Night)</h6>
+                <h6>Rating: &nbsp;&nbsp; 4.5 (463 User)</h6>
+                <a target="_blank" href="https://www.booking.com/hotel/in/aura-boutique.en-gb.html">
+                    <div class="button">Book Now</div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-inner">
+            <div class="card-front" style="background-image: url('images/j001.jpg');">
+            </div>
+            <div class="card-back">
+                <h2>Jagat Niwas Palace</h2>
+                <h6>Price:&nbsp;&nbsp; 2500&#8377; (1 Night)</h6>
+                <h6>Rating: &nbsp;&nbsp; 4.5 (463 User)</h6>
+                <a target="_blank" href="https://www.booking.com/hotel/in/jagat-niwas-palace.en-gb.html">
+                    <div class="button">Book Now</div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-inner">
+            <div class="card-front" style="background-image: url('images/l001.jpg');">
+            </div>
+            <div class="card-back">
+                <h2>Hotel Lakend</h2>
+                <h6>Price:&nbsp;&nbsp; 2500&#8377; (1 Night)</h6>
+                <h6>Rating: &nbsp;&nbsp; 4.5 (463 User)</h6>
+                <a target="_blank" href="https://www.booking.com/hotel/in/lakend.en-gb.html">
+                    <div class="button">Book Now</div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-inner">
+            <div class="card-front" style="background-image: url('images/t001.jpg');">
+            </div>
+            <div class="card-back">
+                <h2>Trident Udaipur</h2>
+                <h6>Price:&nbsp;&nbsp; 2500&#8377; (1 Night)</h6>
+                <h6>Rating: &nbsp;&nbsp; 4.5 (463 User)</h6>
+                <a target="_blank" href="https://www.booking.com/hotel/in/trident-udaipur.en-gb.html">
+                    <div class="button">Book Now</div>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <div id="food">
+      <h1>Food</h1>
+      <div class="card">
+        <div class="card-inner">
+          <div class="card-front" style="background-image: url('images/food/001.jpg');">
+          </div>
+          <div class="card-back">
+            <h2></h2>
+            <h4>Price: &nbsp;</h4>
+            <p></p>
+            </a>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="card">
+        <div class="card-inner">
+          <div class="card-front" style="background-image: url('images/food/002.webp');">
+          </div>
+          <div class="card-back">
+            <h2></h2>
+            <h4>Price: &nbsp;</h4>
+            <p></p>
+            </a>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="card">
+        <div class="card-inner">
+          <div class="card-front" style="background-image: url('images/food/003.webp');">
+          </div>
+          <div class="card-back">
+            <h2></h2>
+            <h4>Price: &nbsp;</h4>
+            <p></p>
+            </a>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="card">
+        <div class="card-inner">
+          <div class="card-front" style="background-image: url('images/food/004.webp');">
+          </div>
+          <div class="card-back">
+            <h2></h2>
+            <h4>Price: &nbsp;</h4>
+            <p></p>
+            </a>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="card">
+        <div class="card-inner">
+          <div class="card-front" style="background-image: url('images/food/005.jpg');">
+          </div>
+          <div class="card-back">
+            <h2></h2>
+            <h4>Price: &nbsp;</h4>
+            <p></p>
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div id="reach">
+      <h1>Reach</h1>
+      <a href="https://www.ixigo.com/flights" target="_blank">
+        <div class="transport">
+          <h3>Flight</h3>
+          <img src="images/svg/T001.svg" />
+        </div>
+      </a>
+
+      <a href="https://www.ixigo.com/trains">
+        <div class="transport">
+          <h3>Train</h3>
+          <img src="images/svg/T002.svg" />
+        </div>
+      </a>
+
+      <a href="https://www.ixigo.com/buses">
+        <div class="transport">
+          <h3>Bus</h3>
+          <img src="images/svg/T003.svg" />
+        </div>
+      </a>
+
+    </div>
+
+    <div id="contact">
+      <div class="fleft">
+        <h2>Contact Us</h2>
+        <p>
+          JJ Building, Jodhpur<br />
+          +91 0987654321<br />
+          journeyjunction@gmail.com<br />
+          jjmembers_mssr@gmail.com<br />
+        </p>
+      </div>
+      <div class="fright">
+        <form class="form">
+          Subscribe Letter for Trip offers<br />
+          <input type="text" placeholder="Email" /><br />
+          <input type="password" placeholder="Password" /><br />
+          <input type="submit" value="Login" />
+        </form>
+      </div>
+
+      <div>
+        <iframe class="fbottom" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13490.640458712658!2d73.6629632811346!3d24.598331526789867!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3967e5e4a1e21081%3A0x6c6fe92a24bf849a!2sNehru%20Garden!5e1!3m2!1sen!2sin!4v1688968600247!5m2!1sen!2sin" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
+
+
+
+<!-- 
+        <nav role="navigation">
+          <div id="menuToggle">
+            <input type="checkbox" />
+            <span></span>
+            <span></span>
+            <span></span>
+            <ul id="menu">
+              <a href="#">
+                <li>Home</li>
+              </a>
+              <a href="#">
+                <li>About</li>
+              </a>
+              <a href="#">
+                <li>Info</li>
+              </a>
+              <a href="#">
+                <li>Contact</li>
+              </a>
+              <a href="https://erikterwan.com/" target="_blank">
+                <li>Show me more</li>
+              </a>
+            </ul>
+          </div>
+        </nav>
+
+
+
+        <details>
+        <summary>Menu</summary>
+        <div><a href="#"> Hello</a></div>
+        <div><a href="#"> Hello</a></div>
+        <div><a href="#"> Hello</a></div>
+        <div><a href="#"> Hello</a></div>
+      </details>
+-->

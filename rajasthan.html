@@ -1,0 +1,305 @@
+<!-- <?php
+include('admin/config/connection.php');
+$sql = "SELECT * FROM home WHERE Sno=1";
+$check = mysqli_query($connection, $sql);
+$value = mysqli_fetch_assoc($check);
+?> -->
+
+<html>
+
+<head>
+  <title>JOURNEY JUNCTION</title>
+  <link href="stylecss/style_raj.css" rel="stylesheet" />
+</head>
+
+<body>
+  <div class="container">
+    <!-- <?php
+    include("header.php");
+    ?> -->
+    
+    
+    <header>
+      <nav role="navigation">
+          <div id="menuToggle">
+              <input type="checkbox" />
+              <span></span>
+              <span></span>
+              <span></span>
+              <ul id="menu">
+                  <a href="home.html">
+                      <li>Home</li>
+                  </a>
+                  <a href="city.html">
+                    <li>Udaipur</li>
+                </a>
+                <a href="jodhpur.html">
+                  <li>Jodhpur</li>
+              </a>
+                  <a href="#destination">
+                      <li>Destination</li>
+                  </a>
+                  <a href="#adventure">
+                      <li>Adventures</li>
+                  </a>
+                  <a href="#hotel">
+                      <li>Hotel</li>
+                  </a>
+                  <a href="#food">
+                      <li>Food</li>
+                  </a>
+                  </a>
+                  <a href="#contact">
+                      <li>Contact</li>
+                  </a>
+              </ul>
+          </div>
+          <a href="images/logo.jpeg"><img class="logo" src="images/logo.jpeg" alt="logo" /></a>
+          <div class="title">
+              <span class="title1">J</span>
+
+              <span class="title2">o</span>
+
+              <span class="title1">u</span>
+
+              <span class="title2">r</span>
+
+              <span class="title1">n</span>
+
+              <span class="title2">e</span>
+
+              <span class="title1">y</span>
+
+              <span class="title2">J</span>
+
+              <span class="title1">u</span>
+
+              <span class="title2">n</span>
+
+              <span class="title1">c</span>
+
+              <span class="title2">t</span>
+
+              <span class="title1">i</span>
+
+              <span class="title2">o</span>
+
+              <span class="title1">n</span>
+
+
+          </div>
+      </nav>
+      <!-- <button class="button" onclick="darkmode()"> Button </button> -->
+  </header>
+    
+    
+    
+    
+    
+    <div id="home" style="background:
+                          linear-gradient(rgba(70, 20, 40, 0.5), 
+                          rgba(50, 50, 40, 0.5)), url('stylecss/img/rajasthan/rajasthan.jpg');
+  background-size: 100% 100%;">
+      <div style="color:#F4EEFF; font-size:30px; height:50px">Padharo Sa</div>
+      <h1 class="city">RAJASTHAN</h1><br />
+      <h2 style="color: #EEEEEE; font-size:50px; height:70px">Rang Rangeela<h2>
+    </div>
+
+    <div class="slider" id="destination" style="background-image: url('images/svg/A001.svg');">
+      <h1>Destinations</h1>
+      <img src="images/havamheal.webp">
+      <img src="images/ccc.jpg">
+      <img src="images/jodhpur/003.webp"/>
+      <img src="images/jaisalmer.webp">
+      <img src="images/barmer.jpg">
+      <img src="images/pushkar.jpg">
+    </div>
+
+    <div id="adventure" style="background-image: url('images/svg/A002.svg');">
+      <h1>Adventures</h1>
+      <div class="adv-container">
+        <div class="adv-carousel">
+          <figure> <img src="images/111.jpg"> </figure>
+          <figure> <img src="images/222.jpg"> </figure>
+          <figure> <img src="images/333.jpg"> </figure>
+          <figure> <img src="images/444.jpg"> </figure>
+          <figure> <img src="images/555.jpg"> </figure>
+          <figure> <img src="images/666.jpg"> </figure>
+          <figure> <img src="images/777.jpg"> </figure>
+          <figure> <img src="images/888.jpg"> </figure>
+          <figure> <img src="images/999.jpg"> </figure>
+        </div>
+      </div>
+    </div>
+
+
+    <?php
+    include("hotel.php");
+    ?>
+
+
+    <div id="food" style="background-image: url('images/svg/f001.svg');">
+      <h1>Food</h1>
+      <div class="card">
+        <div class="card-inner">
+          <div class="card-front" style="background-image: url('images/food/001.jpg');">
+          </div>
+          <div class="card-back">
+            <h2></h2>
+            <h4>Price: &nbsp;</h4>
+            <p></p>
+            </a>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="card">
+        <div class="card-inner">
+          <div class="card-front" style="background-image: url('images/food/002.webp');">
+          </div>
+          <div class="card-back">
+            <h2></h2>
+            <h4>Price: &nbsp;</h4>
+            <p></p>
+            </a>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="card">
+        <div class="card-inner">
+          <div class="card-front" style="background-image: url('images/food/003.webp');">
+          </div>
+          <div class="card-back">
+            <h2></h2>
+            <h4>Price: &nbsp;</h4>
+            <p></p>
+            </a>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="card">
+        <div class="card-inner">
+          <div class="card-front" style="background-image: url('images/food/004.webp');">
+          </div>
+          <div class="card-back">
+            <h2></h2>
+            <h4>Price: &nbsp;</h4>
+            <p></p>
+            </a>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="card">
+        <div class="card-inner">
+          <div class="card-front" style="background-image: url('images/food/005.jpg');">
+          </div>
+          <div class="card-back">
+            <h2></h2>
+            <h4>Price: &nbsp;</h4>
+            <p></p>
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div id="reach" style="background-image: url('images/svg/T004.svg');">
+      <h1>Reach</h1>
+      <a href="https://www.ixigo.com/flights" target="_blank">
+        <div class="transport">
+          <h3>Flight</h3>
+          <img src="images/hh.png" />
+        </div>
+      </a>
+
+      <a href="https://www.ixigo.com/trains">
+        <div class="transport">
+          <h3>Train</h3>
+          <img src="images/ss.png" />
+        </div>
+      </a>
+
+      <a href="https://www.ixigo.com/buses">
+        <div class="transport">
+          <h3>Bus</h3>
+          <img src="images/bus.png" />
+        </div>
+      </a>
+
+    </div>
+
+    <div id="contact">
+      <div class="fleft">
+        <h2>Contact Us</h2>
+        <p>
+          JJ Building, Jodhpur<br />
+          +91 0987654321<br />
+          journeyjunction@gmail.com<br />
+          jjmembers_mssr@gmail.com<br />
+        </p>
+      </div>
+      <div class="fright">
+        <form class="form">
+          Subscribe Letter for Trip offers<br />
+          <input type="text" placeholder="Email" /><br />
+          <input type="password" placeholder="Password" /><br />
+          <input type="submit" value="Login" />
+        </form>
+      </div>
+
+      <div>
+        <iframe class="fbottom" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d780.3951474451237!2d75.82385747817379!3d26.924955085647788!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396db14c7ff57069%3A0xe94a0429a18dabbe!2sJantar%20Mantar%20-%20Jaipur!5e1!3m2!1sen!2sin!4v1688968487780!5m2!1sen!2sin"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
+
+
+
+<!-- 
+        <nav role="navigation">
+          <div id="menuToggle">
+            <input type="checkbox" />
+            <span></span>
+            <span></span>
+            <span></span>
+            <ul id="menu">
+              <a href="#">
+                <li>Home</li>
+              </a>
+              <a href="#">
+                <li>About</li>
+              </a>
+              <a href="#">
+                <li>Info</li>
+              </a>
+              <a href="#">
+                <li>Contact</li>
+              </a>
+              <a href="https://erikterwan.com/" target="_blank">
+                <li>Show me more</li>
+              </a>
+            </ul>
+          </div>
+        </nav>
+
+
+
+        <details>
+        <summary>Menu</summary>
+        <div><a href="#"> Hello</a></div>
+        <div><a href="#"> Hello</a></div>
+        <div><a href="#"> Hello</a></div>
+        <div><a href="#"> Hello</a></div>
+      </details>
+-->
